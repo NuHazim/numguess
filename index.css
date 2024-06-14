@@ -1,0 +1,50 @@
+body{
+    background:url("gambalawa.jpg");
+}
+.gamecontainer h1{
+    color:darkcyan;
+}
+#sub{
+    color:rgb(0, 165, 165);
+}
+.gamecontainer{
+    display:block;
+    text-align: center;
+    margin-top: 13em;
+    padding:60px;
+    position:relative;
+    left:30%;
+    align-items: center;
+    width:600px;
+    border-radius: 20px;
+    border-width: 10px;
+    border-color: darkcyan;
+    border-style: solid;
+    background-color: lightcyan;
+}
+#num{
+    width:250px;
+    border:3px solid darkcyan;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background-color: lightcyan;
+}
+#num::placeholder{
+    color:darkcyan;
+}
+#tries{
+    color:darkcyan;
+}
+#tryagain{
+    position:relative;
+    left:40%;
+    padding:5px;
+    color:darkcyan;
+    border-radius: 10px;
+    border:3px solid darkcyan;
+    background-color: lightcyan;
+}
+#tryagain:hover{
+    color:lightcyan;
+    background-color: darkcyan;
+}
