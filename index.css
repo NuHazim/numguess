@@ -136,28 +136,4 @@ body{
     }
     
 }
-@media (min-width:1280px){
-    .gamecontainer{
-        left:0px;
-        border-left: 0px;
-        border-right: 0px;
-        border-radius: 0px;
-        margin-top: 6em;
-        width:100%; 
-    }
-    .gamecontainer h1{
-        font-size: 6em;
-    }
-    .gamecontainer h3{
-        font-size: 5em;
-    }
-    #tryagain{
-        font-size: 2.5em;
-        left:43%;
-    }
-    #num{
-        width:500px;
-        font-size: 3em;
-    }
-    
-}
+
