@@ -24,6 +24,12 @@ body {
 .gamecontainer h1, .gamecontainer h3 {
     margin: 10px 0;
 }
+.gamecontainer h1{
+    color:darkcyan;
+}
+.gamecontainer h3{
+    color:rgb(0, 193, 193);
+}
 
 #num {
     width: 80%;
