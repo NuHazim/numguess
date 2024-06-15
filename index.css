@@ -1,139 +1,88 @@
-body{
-    background:url("gambalawa.jpg");
-}
-.gamecontainer h1{
-    color:darkcyan;
-}
-#sub{
-    color:rgb(0, 165, 165);
-}
-.gamecontainer{
-    display:block;
-    text-align: center;
-    margin-top: 13em;
-    padding:60px;
-    position:relative;
-    left:30%;
-    align-items: center;
-    width:600px;
-    border-radius: 20px;
-    border-width: 10px;
-    border-color: darkcyan;
-    border-style: solid;
-    background-color: lightcyan;
-}
-#num{
-    width:250px;
-    border:3px solid darkcyan;
-    border-radius: 10px;
-    margin-bottom: 10px;
-    background-color: lightcyan;
-}
-#num::placeholder{
-    color:darkcyan;
-}
-#tries{
-    color:darkcyan;
-}
-#tryagain{
-    position:relative;
-    left:40%;
-    padding:5px;
-    color:darkcyan;
-    border-radius: 10px;
-    border:3px solid darkcyan;
-    background-color: lightcyan;
-}
-#tryagain:hover{
-    color:lightcyan;
-    background-color: darkcyan;
-}
-@media (max-width:320px){
-    .gamecontainer{
-        padding:20px;
-        margin-top: 5em;
-        margin-bottom: 5em;
-        border-right: 0px;
-        border-left: 0px;
-        left:0px;   
-        border-radius: 0px;
-        width:100%;
-    }
-    #num{
-        width:200px;
-    }
-    #tryagain{
-        left:38%;
-    }
-}
-@media (max-width:480px){
-    .gamecontainer{
-        left:0px;
-        border-left: 0px;
-        border-right: 0px;
-        border-radius: 0px;
-        margin-top: 3em;
-        width:100%; 
-    }
-    
-}
-@media (max-width: 600px){
-    .gamecontainer{
-        left:0px;
-        border-left: 0px;
-        border-right: 0px;
-        border-radius: 0px;
-        margin-top: 6em;
-        width:100%; 
-    }
-}
-@media (max-width: 768px){
-    .gamecontainer{
-        left:0px;
-        border-left: 0px;
-        border-right: 0px;
-        border-radius: 0px;
-        margin-top: 6em;
-        width:100%; 
-    }
-    .gamecontainer h1{
-        font-size: 4em;
-    }
-    .gamecontainer h3{
-        font-size: 3em;
-    }
-    #tryagain{
-        left:42%;
-        font-size: 1.5em;
-    }
-    #num{
-        width:300px;
-        font-size: 1.5em;
-    }
-}
-@media (max-width: 1024px){
-    .gamecontainer{
-        left:0px;
-        border-left: 0px;
-        border-right: 0px;
-        border-radius: 0px;
-        margin-top: 6em;
-        width:100%; 
-    }
-    .gamecontainer h1{
-        font-size: 5em;
-    }
-    .gamecontainer h3{
-        font-size: 3em;
-    }
-    #tryagain{
-        font-size: 2.5em;
-        left:40%;
-    }
-    #num{
-        width:500px;
-        font-size: 2em;
-    }
-    
+body {
+    background: url("gambalawa.jpg") no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
 }
 
+.gamecontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin: 10% auto;
+    max-width: 90%;
+    background-color: lightcyan;
+    border: 10px solid darkcyan;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.gamecontainer h1, .gamecontainer h3 {
+    margin: 10px 0;
+}
+
+#num {
+    width: 80%;
+    max-width: 400px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 3px solid darkcyan;
+    border-radius: 10px;
+    background-color: lightcyan;
+}
+
+#num::placeholder {
+    color: darkcyan;
+}
+
+#tryagain {
+    padding: 10px 20px;
+    margin-top: 10px;
+    color: darkcyan;
+    border: 3px solid darkcyan;
+    border-radius: 10px;
+    background-color: lightcyan;
+    cursor: pointer;
+}
+
+#tryagain:hover {
+    color: lightcyan;
+    background-color: darkcyan;
+}
+
+@media (max-width: 768px) {
+    .gamecontainer {
+        width: 95%;
+        padding: 10px;
+        margin-top: 20%;
+    }
+
+    #num {
+        width: 90%;
+        max-width: none;
+    }
+
+    #tryagain {
+        width: 90%;
+        max-width: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .gamecontainer {
+        width: 100%;
+        margin-top: 30%;
+    }
+
+    #num {
+        width: 100%;
+    }
+
+    #tryagain {
+        width: 100%;
+    }
+}
